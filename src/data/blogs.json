@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "author": "Jane Doe",
+        "date": "2024-06-01",
+        "image": "/images/pics/hero.jpg",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Follow us on <a href='https://facebook.com/lorem' target='_blank'>Facebook</a> for more updates."
+    },
+    {
+        "id": 2,
+        "title": "Consectetur Adipiscing Elit Pellentesque",
+        "author": "John Smith",
+        "date": "2024-06-02",
+        "image": "/images/pics/shape80.png",
+        "excerpt": "Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc.",
+        "content": "Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Visit our <a href='https://twitter.com/lorem' target='_blank'>Twitter</a> for news."
+    },
+    {
+        "id": 3,
+        "title": "Vestibulum Ante Ipsum Primis",
+        "author": "Emily Johnson",
+        "date": "2024-06-03",
+        "image": "/images/pics/safety-supplies-1.png",
+        "excerpt": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam at risus et justo dignissim congue. Connect on <a href='https://linkedin.com/lorem' target='_blank'>LinkedIn</a>."
+    },
+    {
+        "id": 4,
+        "title": "Cras Venenatis Euismod Malesuada",
+        "author": "Michael Brown",
+        "date": "2024-06-04",
+        "image": "/images/pics/hero.jpg",
+        "excerpt": "Cras venenatis euismod malesuada. Etiam porta sem malesuada magna mollis euismod.",
+        "content": "Cras venenatis euismod malesuada. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula."
+    },
+    {
+        "id": 5,
+        "title": "Etiam Porta Sem Malesuada Magna",
+        "author": "Sarah Lee",
+        "date": "2024-06-05",
+        "image": "/images/pics/shape80.png",
+        "excerpt": "Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna.",
+        "content": "Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Follow us on <a href='https://instagram.com/lorem' target='_blank'>Instagram</a>."
+    },
+    {
+        "id": 6,
+        "title": "Nullam Quis Risus Eget Urna Mollis",
+        "author": "David Kim",
+        "date": "2024-06-06",
+        "image": "/images/pics/safety-supplies-1.png",
+        "excerpt": "Nullam quis risus eget urna mollis ornare vel eu leo.",
+        "content": "Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+    },
+    {
+        "id": 7,
+        "title": "Integer Posuere Erat a Ante",
+        "author": "Olivia White",
+        "date": "2024-06-07",
+        "image": "/images/pics/hero.jpg",
+        "excerpt": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+        "content": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+    },
+    {
+        "id": 8,
+        "title": "Morbi Leo Risus Porta Ac Consectetur",
+        "author": "Lucas Green",
+        "date": "2024-06-08",
+        "image": "/images/pics/shape80.png",
+        "excerpt": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "content": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Like us on <a href='https://facebook.com/lorem' target='_blank'>Facebook</a>."
+    },
+    {
+        "id": 9,
+        "title": "Sed Posuere Consectetur Est at Lobortis",
+        "author": "Sophia Turner",
+        "date": "2024-06-09",
+        "image": "/images/pics/safety-supplies-1.png",
+        "excerpt": "Sed posuere consectetur est at lobortis. Aenean eu leo quam.",
+        "content": "Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+    },
+    {
+        "id": 10,
+        "title": "Aenean Eu Leo Quam Pellentesque Ornare",
+        "author": "William Scott",
+        "date": "2024-06-10",
+        "image": "/images/pics/hero.jpg",
+        "excerpt": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+        "content": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. For more, follow <a href='https://twitter.com/lorem' target='_blank'>@lorem</a>."
+    }
+]

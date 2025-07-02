@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
                 className="absolute top-8 left-8 w-12 h-12 z-10 opacity-40"
                 style={svgStyle}
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: [0, 180, 80, 0], y: [0, 180, 80, 0], rotate: [0, 10, -10, 0] }}
+                animate={{ x: [0, 320, 180, 0], y: [0, 320, 180, 0], rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.img
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
                 className="absolute top-10 left-1/4 w-12 h-12 z-10 opacity-40"
                 style={svgStyle}
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: [0, -100, -60, 0], y: [0, 100, 50, 0], rotate: [0, -8, 8, 0] }}
+                animate={{ x: [0, -200, -120, 0], y: [0, 200, 100, 0], rotate: [0, -8, 8, 0] }}
                 transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.img
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
                 className="absolute bottom-16 left-20 w-12 h-12 z-10 opacity-40"
                 style={svgStyle}
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: [0, 120, 60, 0], y: [0, -120, -40, 0], rotate: [0, 12, -12, 0] }}
+                animate={{ x: [0, 220, 120, 0], y: [0, -220, -80, 0], rotate: [0, 12, -12, 0] }}
                 transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.img
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
                 className="absolute bottom-10 left-1/4 w-16 h-16 z-10 opacity-40"
                 style={svgStyle}
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: [0, -100, -40, 0], y: [0, -120, -60, 0], rotate: [0, -10, 10, 0] }}
+                animate={{ x: [0, -180, -80, 0], y: [0, -220, -120, 0], rotate: [0, -10, 10, 0] }}
                 transition={{ duration: 19, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.img
@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
                 className="absolute top-1/2 left-1/4 w-16 h-16 z-10 opacity-40"
                 style={svgStyle}
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: [0, -100, -60, 0], y: [0, -100, -60, 0], rotate: [0, 8, -8, 0] }}
+                animate={{ x: [0, -180, -100, 0], y: [0, -180, -100, 0], rotate: [0, 8, -8, 0] }}
                 transition={{ duration: 21, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.img
@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
                 className="absolute top-1/2 left-1/4 w-16 h-16 z-10 opacity-40"
                 style={svgStyle}
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: [0, 80, 40, 0], y: [0, -120, -60, 0], rotate: [0, -8, 8, 0] }}
+                animate={{ x: [0, 140, 80, 0], y: [0, -200, -100, 0], rotate: [0, -8, 8, 0] }}
                 transition={{ duration: 23, repeat: Infinity, ease: 'easeInOut' }}
             />
             <div className="absolute z-10 flex flex-col items-start text-left w-full pl-8" style={{ bottom: '30%', left: 0 }}>
@@ -84,8 +84,8 @@ const HeroSection: React.FC = () => {
             <img
                 src="/images/pics/shape80.png"
                 alt="Decorative Shape"
-                className="absolute bottom-0 right-0 w-[50rem] h-auto z-20 pointer-events-none select-none"
-                style={{ maxWidth: '150vw' }}
+                className="absolute bottom-0 right-0 w-[30rem] h-auto z-20 pointer-events-none select-none"
+                style={{ maxWidth: '90vw' }}
             />
         </section>
     );
