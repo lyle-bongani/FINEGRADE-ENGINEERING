@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             className="w-full"
         >
             {/* Top Bar */}
-            <div className="bg-orange-500 text-white flex justify-between items-center text-sm px-8 h-10">
+            <div className="bg-blue-500 text-white flex justify-between items-center text-sm px-8 h-10">
                 <div className="flex items-center gap-2">
                     <LocationOnIcon fontSize="small" />
                     <span>161 Gleneagles Road, Southerton, Harare</span>
@@ -28,8 +28,8 @@ const Header: React.FC = () => {
                 <div className="flex items-center gap-4">
                     <PhoneIcon fontSize="small" />
                     <span>Sales Hotline: (+263) 242 661 304</span>
-                    <a href="#" className="hover:text-orange-200 transition"><FacebookIcon fontSize="small" /></a>
-                    <a href="#" className="hover:text-orange-200 transition"><Linkedin size={18} /></a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition" aria-label="Facebook"><FacebookIcon fontSize="small" /></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition" aria-label="LinkedIn"><Linkedin size={18} /></a>
                 </div>
             </div>
             {/* Main Header */}
@@ -38,25 +38,25 @@ const Header: React.FC = () => {
                     <img src="/images/logo/FINEGRADE ENGINEERING Logo.png" alt="FINEGRADE ENGINEERING Logo" className="h-16 w-auto" />
                 </div>
                 <nav className="flex items-center gap-8 ml-16">
-                    <Link to="/" className="text-orange-500 font-semibold">Home</Link>
-                    <Link to="/about" className="text-gray-800 hover:text-orange-500 transition">About Us</Link>
+                    <Link to="/" className="text-blue-500 font-semibold">Home</Link>
+                    <Link to="/about" className="text-gray-800 hover:text-blue-500 transition">About Us</Link>
                     <div className="relative group">
-                        <button className="flex items-center gap-1 text-gray-800 hover:text-orange-500 transition font-medium focus:outline-none group-hover:text-orange-500">
+                        <button className="flex items-center gap-1 text-gray-800 hover:text-blue-500 transition font-medium focus:outline-none group-hover:text-blue-500">
                             Scope <span className="text-xs">▼</span>
                         </button>
-                        <div className="absolute left-0 mt-2 w-72 bg-white shadow-lg border-t-2 border-orange-500 rounded-b z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
-                            <Link to="/scope/electrical" className="block px-6 py-3 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition">Electrical Control & Instrumentation</Link>
-                            <Link to="/scope/voltage" className="block px-6 py-3 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition">Medium & High Voltage Services</Link>
-                            <Link to="/scope/structural" className="block px-6 py-3 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition">Structural, Mechanical, Piping & Platework</Link>
-                            <Link to="/scope/energy" className="block px-6 py-3 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition">Energy & Waste Management</Link>
+                        <div className="absolute left-0 mt-2 w-72 bg-white shadow-lg border-t-2 border-blue-600 rounded-b z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                            <Link to="/scope/electrical" className="block px-6 py-3 text-gray-800 hover:bg-blue-500 hover:text-blue-600 transition">Electrical Control & Instrumentation</Link>
+                            <Link to="/scope/voltage" className="block px-6 py-3 text-gray-800 hover:bg-blue-500 hover:text-blue-600 transition">Medium & High Voltage Services</Link>
+                            <Link to="/scope/structural" className="block px-6 py-3 text-gray-800 hover:bg-blue-500 hover:text-blue-600 transition">Structural, Mechanical, Piping & Platework</Link>
+                            <Link to="/scope/energy" className="block px-6 py-3 text-gray-800 hover:bg-blue-500 hover:text-blue-600 transition">Energy & Waste Management</Link>
                         </div>
                     </div>
-                    <Link to="/gallery" className="text-gray-800 hover:text-orange-500 transition">Gallery</Link>
-                    <Link to="/blog" className="text-gray-800 hover:text-orange-500 transition">Blog</Link>
-                    <Link to="/contact" className="text-gray-800 hover:text-orange-500 transition">Contact</Link>
+                    <Link to="/gallery" className="text-gray-800 hover:text-blue-500 transition">Gallery</Link>
+                    <Link to="/blog" className="text-gray-800 hover:text-blue-500 transition">Blog</Link>
+                    <Link to="/contact" className="text-gray-800 hover:text-blue-500 transition">Contact</Link>
                 </nav>
                 <div>
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white rounded-md px-7 py-2 font-bold flex items-center gap-2 transition">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-7 py-2 font-bold flex items-center gap-2 transition">
                         <MessageCircle size={20} /> FREE QUOTE
                     </button>
                 </div>

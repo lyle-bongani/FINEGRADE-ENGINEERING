@@ -72,11 +72,11 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 23, repeat: Infinity, ease: 'easeInOut' }}
             />
             <div className="absolute z-10 flex flex-col items-start text-left w-full pl-8" style={{ bottom: '30%', left: 0 }}>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-orange-500 mb-4 drop-shadow text-left drop-shadow-[0_2px_2px_white]">
+                <h1 className="text-4xl md:text-6xl font-extrabold text-blue-500 mb-4 drop-shadow text-left drop-shadow-[0_2px_2px_white]">
                     Expert Industrial Engineering<br />
                     Solutions Partner.
                 </h1>
-                <button className="mt-8 px-8 py-3 border-2 border-orange-500 text-white rounded-full font-semibold text-2xl md:text-3xl bg-transparent hover:bg-orange-500 hover:text-white transition-colors drop-shadow">
+                <button className="mt-8 px-8 py-3 border-2 border-blue-500 text-white rounded-full font-semibold text-2xl md:text-3xl bg-transparent hover:bg-blue-500 hover:text-white transition-colors drop-shadow">
                     Our Scope
                 </button>
             </div>

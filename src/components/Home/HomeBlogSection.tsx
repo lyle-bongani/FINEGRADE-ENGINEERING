@@ -13,10 +13,10 @@ const HomeBlogSection: React.FC = () => {
                     <div>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight relative text-left">
                             WHAT'S HAPPENING
-                            <span className="block w-16 h-1 bg-orange-500 mt-2 rounded"></span>
+                            <span className="block w-16 h-1 bg-blue-500 mt-2 rounded"></span>
                         </h2>
                     </div>
-                    <button className="border border-orange-500 text-orange-500 px-5 py-2 rounded-full font-semibold hover:bg-orange-500 hover:text-white transition text-sm mt-4 md:mt-0 md:ml-8 text-left">See More News</button>
+                    <button className="border border-blue-500 text-blue-500 px-5 py-2 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition text-sm mt-4 md:mt-0 md:ml-8 text-left">See More News</button>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Featured Post */}
@@ -25,9 +25,9 @@ const HomeBlogSection: React.FC = () => {
                         <div className="relative z-10 p-8 w-full text-left">
                             <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4 drop-shadow-lg" style={{ textShadow: '2px 2px 8px #000' }}>{featured.title}</h3>
                             <p className="text-white text-base md:text-lg mb-4 drop-shadow" style={{ textShadow: '1px 1px 6px #000' }}>{featured.excerpt}</p>
-                            <span className="inline-block relative font-semibold text-orange-500 cursor-pointer group">
+                            <span className="inline-block relative font-semibold text-blue-500 cursor-pointer group">
                                 Read More
-                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-orange-200 -z-10 group-hover:bg-orange-500 transition-all"></span>
+                                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-200 -z-10 group-hover:bg-blue-500 transition-all"></span>
                             </span>
                         </div>
                     </div>
@@ -39,9 +39,9 @@ const HomeBlogSection: React.FC = () => {
                                 <div className="flex-1 text-left">
                                     <h4 className="text-lg font-bold text-gray-900 mb-1 leading-tight line-clamp-2">{post.title}</h4>
                                     <div className="text-gray-500 text-xs mb-2">2 days ago</div>
-                                    <span className="inline-block relative font-semibold text-orange-500 cursor-pointer group text-sm">
+                                    <span className="inline-block relative font-semibold text-blue-500 cursor-pointer group text-sm">
                                         Read More
-                                        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-orange-200 -z-10 group-hover:bg-orange-500 transition-all"></span>
+                                        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-200 -z-10 group-hover:bg-blue-500 transition-all"></span>
                                     </span>
                                 </div>
                             </div>

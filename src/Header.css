@@ -1,6 +1,6 @@
 /* Top Bar */
 .header-top-bar {
-    background: #16a2dc;
+    background: #2563eb;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 .header-social-icon:hover {
-    color: #0e76a8;
+    color: #2563eb;
 }
 
 /* Main Header */
@@ -68,7 +68,7 @@
 
 .header-nav a.active,
 .header-nav a:hover {
-    color: #16a2dc;
+    color: #2563eb;
 }
 
 .header-scope-dropdown {
@@ -81,7 +81,7 @@
 }
 
 .header-quote-btn button {
-    background: #16a2dc;
+    background: #2563eb;
     color: #fff;
     border: none;
     border-radius: 6px;
