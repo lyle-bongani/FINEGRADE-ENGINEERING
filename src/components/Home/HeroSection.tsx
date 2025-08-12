@@ -8,7 +8,7 @@ const svgStyle = {
 const HeroSection: React.FC = () => {
     return (
         <section
-            className="w-full relative flex flex-col items-center justify-center text-center h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden"
+            className="w-full relative flex flex-col items-center justify-center text-center h-[85vh] md:h-[500px] lg:h-[600px] overflow-hidden"
             style={{
                 backgroundImage:
                     'url(/images/pics/hero.jpg)',
@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
                     Our Scope
                 </button>
             </div>
-            {/* Shape80 PNG at bottom right */}
+            {/* Shape80 PNG at bottom right (always visible) */}
             <img
                 src="/images/pics/shape80.png"
                 alt="Decorative Shape"

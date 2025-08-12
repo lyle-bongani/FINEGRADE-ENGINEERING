@@ -34,10 +34,10 @@ const Contact: React.FC = () => {
   return (
     <div className="w-full">
       {/* Hero */}
-      <section className="bg-blue-50 border-b border-blue-100 py-12 md:py-16">
+      <section className="bg-blue-50 border-b border-blue-100" style={{ minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-blue-500">Contact Us</h1>
-          <p className="mt-3 text-gray-700 max-w-2xl">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white text-center">Contact Us</h1>
+          <p className="mt-6 text-white max-w-3xl mx-auto text-center text-xl md:text-2xl font-light">
             Let’s discuss your project or service needs. Our team will get back to you promptly.
           </p>
         </div>

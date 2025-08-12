@@ -2,12 +2,12 @@ import React from 'react';
 import { MapPin, Phone, Facebook, Linkedin } from 'lucide-react';
 
 const galleryImages = [
-    '/images/pics/Breast-Cancer-Awareness-2024-6.jpg',
-    '/images/pics/hero.jpg',
-    '/images/pics/safety-supplies-1.png',
-    '/images/pics/shape80.png',
-    '/images/pics/hero.jpg',
-    '/images/pics/Breast-Cancer-Awareness-2024-6.jpg',
+  'https://www.appliedcontrols.co.zw/wp-content/uploads/2024/12/Breast-Cancer-Awareness-2024-5-1536x1024.jpg',
+  'https://www.appliedcontrols.co.zw/wp-content/uploads/2024/12/Breast-Cancer-Awareness-2024-4-1536x1025.jpg',
+  'https://www.appliedcontrols.co.zw/wp-content/uploads/2024/12/Breast-Cancer-Awareness-2024-3.jpg',
+  'https://www.appliedcontrols.co.zw/wp-content/uploads/2024/12/Breast-Cancer-Awareness-2024-2-1536x1024.jpg',
+  'https://www.appliedcontrols.co.zw/wp-content/uploads/2024/12/Breast-Cancer-Awareness-2024-1-1536x1024.jpg',
+  'https://www.appliedcontrols.co.zw/wp-content/uploads/2024/12/Breast-Cancer-Awareness-2024-7.jpg',
 ];
 
 const Footer: React.FC = () => {
@@ -20,9 +20,22 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col items-start md:w-1/4 mb-8 md:mb-0 text-left">
                     <img src="/images/logo/FINEGRADE ENGINEERING Logo.png" alt="Applied Controls Technology Logo" className="h-24 w-auto mb-6" />
                     <div className="flex gap-3 mt-2">
-                        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 rounded p-2 hover:bg-blue-500 transition" aria-label="Facebook"><Facebook size={22} className="text-blue-500" /></a>
-                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-100 rounded p-2 hover:bg-blue-500 transition" aria-label="LinkedIn"><Linkedin size={22} className="text-blue-500" /></a>
+                        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 rounded-full p-2 hover:bg-blue-600 transition" aria-label="Facebook"><Facebook size={22} className="text-white" /></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="bg-blue-500 rounded-full p-2 hover:bg-blue-600 transition" aria-label="LinkedIn"><Linkedin size={22} className="text-white" /></a>
                     </div>
+                </div>
+                {/* Quick Links */}
+                <div className="md:w-1/5 mb-8 md:mb-0 text-left">
+                    <h3 className="text-xl font-bold mb-2">Quick Links</h3>
+                    <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
+                    <nav className="flex flex-col gap-2">
+                        <a href="/" className="hover:text-blue-400 transition font-medium">Home</a>
+                        <a href="/about" className="hover:text-blue-400 transition font-medium">About Us</a>
+                        <a href="/services/electrical-control-instrumentation" className="hover:text-blue-400 transition font-medium">Services</a>
+                        <a href="/gallery" className="hover:text-blue-400 transition font-medium">Gallery</a>
+                        <a href="/blog" className="hover:text-blue-400 transition font-medium">Blog</a>
+                        <a href="/contact" className="hover:text-blue-400 transition font-medium">Contact</a>
+                    </nav>
                 </div>
                 {/* Offices */}
                 <div className="flex-1 flex flex-col md:flex-row gap-8 justify-center text-left">
@@ -44,15 +57,18 @@ const Footer: React.FC = () => {
                     <h3 className="text-xl font-bold mb-2">Gallery</h3>
                     <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
                     <div className="grid grid-cols-3 gap-2">
-                        {galleryImages.map((img, i) => (
+                        {galleryImages.slice(0, 6).map((img, i) => (
                             <img key={i} src={img} alt="Gallery" className="w-16 h-16 object-cover rounded" />
                         ))}
+                    </div>
+                    <div className="mt-3">
+                        <a href="/gallery" className="text-blue-400 hover:text-blue-600 font-semibold underline text-sm">View Full Gallery</a>
                     </div>
                 </div>
             </div>
             {/* Bottom Bar */}
             <div className="relative z-10 mt-8 border-t border-gray-700 pt-4 text-left text-gray-300 text-sm">
-                © 2025 Applied Controls Technology | SpeMEDIA Website Design
+                © 2025 Applied Controls Technology | <a href="https://www.spemedia.co.zw/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 underline">SpeMEDIA Website Design</a>
             </div>
         </footer>
     );
