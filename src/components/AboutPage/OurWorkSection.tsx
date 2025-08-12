@@ -91,7 +91,7 @@ const OurWorkSection: React.FC = () => {
   };
 
   return (
-    <section className="w-screen max-w-none py-20 bg-white flex flex-col items-center">
+    <section className="w-full max-w-none py-20 bg-white flex flex-col items-center overflow-x-hidden">
       <div className="w-full max-w-7xl rounded-3xl shadow-2xl bg-white py-16 px-4 md:px-16 flex flex-col items-center relative overflow-visible">
         <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2 text-center">Our Work</h2>
         <div className="text-blue-400 text-lg font-medium mb-12 text-center">A Selection of Signature Projects</div>

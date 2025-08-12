@@ -1,17 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Blog article refined typography */
+.article-content {
+  font-size: 1.05rem;
+}
+.article-content p {
+  margin: 0.9rem 0 1.1rem;
+}
+.article-content p:first-of-type::first-letter {
+  font-size: 3.2rem;
+  line-height: 1;
+  float: left;
+  margin: 0.2rem 0.4rem 0 0;
+  color: #259ed9;
+  font-weight: 700;
+}
+.article-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+.article-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+.article-content img {
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+.article-content blockquote {
+  margin: 1.25rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #259ed9;
+  color: #4b5563;
+  font-style: italic;
 }

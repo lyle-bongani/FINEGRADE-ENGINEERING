@@ -2,7 +2,6 @@ import React from 'react';
 import AboutHero from '../components/AboutPage/AboutHero';
 import AboutSection from '../components/AboutPage/AboutSection';
 import MissionVisionSection from '../components/AboutPage/MissionVisionSection';
-import BreakImageSection from '../components/AboutPage/BreakImageSection';
 import CoreValuesSection from '../components/AboutPage/CoreValuesSection';
 import CustomerSupplierCommunitySection from '../components/AboutPage/CustomerSupplierCommunitySection';
 import OurWorkSection from '../components/AboutPage/OurWorkSection';
@@ -15,10 +14,9 @@ const AboutUs: React.FC = () => {
         <AboutHero />
         <AboutSection />
         <MissionVisionSection />
-        <BreakImageSection />
+        <OurServicesSection />
         <CoreValuesSection />
         <CustomerSupplierCommunitySection />
-        <OurServicesSection />
         <OurWorkSection />
         <MeetTheTeamSection />
       </>

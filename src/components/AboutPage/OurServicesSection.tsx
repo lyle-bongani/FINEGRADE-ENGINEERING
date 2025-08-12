@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Award, ShieldCheck, Users } from 'lucide-react';
 
@@ -59,15 +60,25 @@ const OurServicesSection: React.FC = () => (
               className={`rounded-2xl border border-blue-100 p-7 flex flex-col items-start shadow-md transition-all duration-200 ${idx === 0 ? 'bg-blue-500 text-white border-blue-500 shadow-xl' : 'bg-white text-blue-900 hover:border-blue-400 hover:shadow-lg'}`}
             >
               <div className="flex items-center mb-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-blue-400 mr-3"></span>
+                <span className={`inline-block w-2 h-2 rounded-full mr-3 ${idx === 0 ? 'bg-white' : 'bg-blue-400'}`}></span>
                 <span className="text-lg font-bold">{service.title}</span>
               </div>
-              <div className={`text-base mb-4 ${idx === 0 ? 'text-blue-100' : 'text-blue-700'}`}>{service.desc}</div>
-              <button
-                className={`mt-auto px-4 py-2 rounded-full font-semibold text-sm transition-colors duration-200 ${idx === 0 ? 'bg-white text-blue-600 hover:bg-blue-100' : 'bg-blue-50 text-blue-700 hover:bg-blue-100'}`}
-              >
-                Learn more
-              </button>
+              <div className={`text-base mb-4 ${idx === 0 ? 'text-white' : 'text-blue-700'}`}>{service.desc}</div>
+              {idx === 0 ? (
+                <Link
+                  to="/services/electrical-control-instrumentation"
+                  className="mt-auto px-4 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-white text-blue-600 hover:bg-blue-500 hover:text-white"
+                >
+                  Learn more
+                </Link>
+              ) : (
+                <Link
+                  to={idx === 1 ? '/services/medium-high-voltage' : idx === 2 ? '/services/structural-mechanical-piping-platework' : '/services/energy-waste-management'}
+                  className="mt-auto px-4 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-blue-500 text-white hover:bg-blue-600 hover:text-white"
+                >
+                  Learn more
+                </Link>
+              )}
             </div>
           ))}
         </div>

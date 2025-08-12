@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Zap, Settings, BarChart2, Layers, Leaf, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -53,7 +54,7 @@ const ServicesSection: React.FC = () => {
                                     `flex flex-col items-center justify-between rounded-xl p-8 shadow transition group ` +
                                     (idx === 2
                                         ? 'bg-blue-500 text-white scale-105 z-10'
-                                        : 'bg-gray-100 text-gray-900 hover:shadow-lg')
+                                        : 'bg-white text-gray-900 border border-blue-100 hover:shadow-lg')
                                 }
                                 whileHover={{ y: -4, boxShadow: '0 8px 32px 0 rgba(59, 130, 246, 0.15)' }}
                             >
@@ -67,17 +68,38 @@ const ServicesSection: React.FC = () => {
                                 </motion.div>
                                 <h3 className="text-lg font-bold mb-2 text-center">{service.title}</h3>
                                 <p className="text-sm mb-4 text-center opacity-80">{service.desc}</p>
-                                <a
-                                    href="https://example.com/" target="_blank" rel="noopener noreferrer"
-                                    className={
-                                        (idx === 2
-                                            ? 'text-white border-white'
-                                            : 'text-blue-500 border-blue-500') +
-                                        ' font-semibold border-b-2 pb-1 hover:border-blue-700 transition'
+                                {(() => {
+                                    let to = '/contact';
+                                    switch (service.title) {
+                                        case 'Electrical Control & Instrumentation':
+                                            to = '/services/electrical-control-instrumentation';
+                                            break;
+                                        case 'Medium & High Voltage Services':
+                                            to = '/services/medium-high-voltage';
+                                            break;
+                                        case 'Structural, Mechanical, Piping & Platework':
+                                            to = '/services/structural-mechanical-piping-platework';
+                                            break;
+                                        case 'Energy & Waste Management':
+                                            to = '/services/energy-waste-management';
+                                            break;
+                                        default:
+                                            to = '/contact';
                                     }
-                                >
-                                    Learn More
-                                </a>
+                                    return (
+                                        <Link
+                                            to={to}
+                                            className={
+                                                (idx === 2
+                                                    ? 'text-white border-white'
+                                                    : 'text-blue-500 border-blue-500') +
+                                                ' font-semibold border-b-2 pb-1 hover:border-blue-700 transition'
+                                            }
+                                        >
+                                            Learn More
+                                        </Link>
+                                    );
+                                })()}
                             </motion.div>
                         );
                     })}
