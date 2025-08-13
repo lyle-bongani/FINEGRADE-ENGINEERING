@@ -38,20 +38,15 @@ const Footer: React.FC = () => {
                     </nav>
                 </div>
                 {/* Offices */}
-                <div className="flex-1 flex flex-col md:flex-row gap-8 justify-center text-left">
-                    <div>
-                        <h3 className="text-xl font-bold mb-2">Harare Office</h3>
-                        <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
-                        <div className="flex items-center gap-2 mb-2"><MapPin size={18} className="text-blue-400" />161 Gleneagles Road, Southerton, Harare</div>
-                        <div className="flex items-center gap-2"><Phone size={18} className="text-blue-400" />+263 242 661 304</div>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-bold mb-2">Bulawayo Office</h3>
-                        <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
-                        <div className="flex items-center gap-2 mb-2"><MapPin size={18} className="text-blue-400" />4 Sheffield Road, Belmont, Bulawayo</div>
-                        <div className="flex items-center gap-2"><Phone size={18} className="text-blue-400" />+263 292 260 106</div>
-                    </div>
-                </div>
+                <div className="flex-1 flex flex-col gap-4 justify-center text-left">
+  <h3 className="text-xl font-bold mb-2 text-white">HEADOFFICE</h3>
+  <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
+  <div className="flex items-center gap-2 mb-2"><MapPin size={18} className="text-blue-400" /><span className="text-white">154 Zebra Street, Nkana East, Kitwe.</span></div>
+  <div className="flex items-center gap-2 mb-2"><Phone size={18} className="text-blue-400" /><span className="text-white">+260 212 222 249 | +260 212 222 250</span></div>
+  <div className="flex items-center gap-2 mb-2"><Phone size={18} className="text-blue-400" /><span className="text-white">+260769104568 | +260769104865</span></div>
+  <div className="flex items-center gap-2 mb-2"><span className="text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M2 4v16h20V4H2zm2 2h16v12H4V6zm2 2v2h2V8H6zm0 4v2h2v-2H6zm4-4v2h8V8h-8zm0 4v2h8v-2h-8zm0 4v2h8v-2h-8z" fill="currentColor"/></svg></span><a href="mailto:sales@fge.co.zm" className="underline text-blue-300 hover:text-blue-200">sales@fge.co.zm</a></div>
+  <div className="flex items-center gap-2 mb-2"><span className="text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/></svg></span><a href="https://www.fge.co.zm" target="_blank" rel="noopener noreferrer" className="underline text-blue-300 hover:text-blue-200">www.fge.co.zm</a></div>
+</div>
                 {/* Gallery */}
                 <div className="md:w-1/4 text-left">
                     <h3 className="text-xl font-bold mb-2">Gallery</h3>

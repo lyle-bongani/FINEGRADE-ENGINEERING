@@ -49,22 +49,39 @@ const Contact: React.FC = () => {
           {/* Left: Details */}
           <div className="md:col-span-2 space-y-6">
             <div>
-              <h2 className="text-xl font-bold text-blue-500">Head Office</h2>
-              <p className="mt-2 text-gray-700">161 Gleneagles Road, Southerton, Harare</p>
-            </div>
-            <div className="space-y-1 text-gray-700">
-              <p><span className="font-semibold text-blue-500">Email:</span> sales@appliedcontrols.co.zw</p>
-              <p><span className="font-semibold text-blue-500">Sales Hotline:</span> (+263) 242 661 304</p>
-            </div>
-            <div className="rounded-2xl border border-blue-100 overflow-hidden">
-              <iframe
-                title="Map to 161 Gleneagles Road, Southerton, Harare"
-                className="w-full h-80 md:h-96"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=161%20Gleneagles%20Road%2C%20Southerton%2C%20Harare&output=embed"
-              />
-            </div>
+  <h2 className="text-xl font-bold text-blue-500 text-center md:text-left mb-4">HEADOFFICE</h2>
+  <div className="space-y-3 text-blue-500">
+    <div className="flex items-center gap-3">
+      <span role="img" aria-label="address" className="text-2xl">🏢</span>
+      <span className="font-medium">154 Zebra Street, Nkana East, Kitwe.</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <span role="img" aria-label="phone" className="text-2xl">☎️</span>
+      <span className="font-medium">+260 212 222 249 | +260 212 222 250</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <span role="img" aria-label="mobile" className="text-2xl">📱</span>
+      <span className="font-medium">+260769104568 | +260769104865</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <span role="img" aria-label="email" className="text-2xl">✉️</span>
+      <a href="mailto:sales@fge.co.zm" className="underline hover:text-blue-700 font-medium">sales@fge.co.zm</a>
+    </div>
+    <div className="flex items-center gap-3">
+      <span role="img" aria-label="website" className="text-2xl">🌐</span>
+      <a href="https://www.fge.co.zm" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700 font-medium">www.fge.co.zm</a>
+    </div>
+  </div>
+  <div className="rounded-2xl border border-blue-100 overflow-hidden mt-6">
+    <iframe
+      title="Map to 154 Zebra Street, Nkana East, Kitwe"
+      className="w-full h-80 md:h-96"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=154+Zebra+Street,+Nkana+East,+Kitwe&output=embed"
+    />
+  </div>
+</div>
           </div>
 
           {/* Right: Form */}

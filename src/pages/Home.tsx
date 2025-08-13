@@ -8,6 +8,7 @@ import WorldClassBrands from '../components/Home/WorldClassBrands';
 import OurCommitment from '../components/Home/OurCommitment';
 import HomeBlogSection from '../components/Home/HomeBlogSection';
 import ServicesSection from '../components/Home/ServicesSection';
+import HomePartnersMarquee from '../components/HomePartnersMarquee';
 import NewsletterSection from '../components/Home/NewsletterSection';
 
 const Home: React.FC = () => {
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
             <HeroSection />
             <HomeAbout />
             <MissionVisionValues />
+            <HomePartnersMarquee />
             <ServicesSection />
             <WorldClassBrands />
             <OurCommitment />

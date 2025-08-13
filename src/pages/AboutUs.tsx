@@ -7,6 +7,7 @@ import CustomerSupplierCommunitySection from '../components/AboutPage/CustomerSu
 import OurWorkSection from '../components/AboutPage/OurWorkSection';
 import MeetTheTeamSection from '../components/AboutPage/MeetTheTeamSection';
 import OurServicesSection from '../components/AboutPage/OurServicesSection';
+import PartnersSection from '../components/AboutPage/PartnersSection';
 
 const AboutUs: React.FC = () => {
     return (
@@ -16,9 +17,10 @@ const AboutUs: React.FC = () => {
         <MissionVisionSection />
         <OurServicesSection />
         <CoreValuesSection />
+        <MeetTheTeamSection />
+        <PartnersSection />
         <CustomerSupplierCommunitySection />
         <OurWorkSection />
-        <MeetTheTeamSection />
       </>
     );
 };
