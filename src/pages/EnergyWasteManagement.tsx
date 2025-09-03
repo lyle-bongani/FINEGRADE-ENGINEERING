@@ -9,8 +9,8 @@ const EnergyWasteManagement: React.FC = () => {
   return (
     <main className="w-full bg-white text-gray-700">
       {/* Hero */}
-      <section className="w-full bg-blue-500 text-white min-h-screen">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 pt-[40vh] pb-12 md:pb-20 lg:pb-28">
+      <section className="w-full bg-blue-500 text-white min-h-[60vh]">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 pt-[22vh] pb-12 md:pb-16 lg:pb-20">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">Energy & Waste Management</h1>
           <p className="mt-4 md:mt-6 text-base md:text-xl text-blue-100 max-w-3xl">
             Innovative energy and waste management services for sustainable operations.

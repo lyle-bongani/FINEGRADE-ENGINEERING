@@ -2,12 +2,15 @@ import React from 'react';
 
 const CustomerSupplierCommunitySection: React.FC = () => (
   <section className="w-full bg-white py-0">
-    <img
-      src="/images/pics/customersuppliercommunity.png"
-      alt="Customer Supplier Community"
+    <video
       className="w-full h-auto object-contain"
       style={{ maxHeight: '600px' }}
-      loading="lazy"
+      src="/images/pics/videosection.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
     />
   </section>
 );

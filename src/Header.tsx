@@ -12,6 +12,7 @@ const Header: React.FC = () => {
     const isActive = (path: string) => location.pathname === path || (path !== '/' && location.pathname.startsWith(path));
     const [mobileOpen, setMobileOpen] = useState(false);
     const [mobileScopeOpen, setMobileScopeOpen] = useState(false);
+    const [desktopScopeOpen, setDesktopScopeOpen] = useState(false);
 
     const menuVariants: Variants = {
         hidden: { x: '100%' },
@@ -36,15 +37,15 @@ const Header: React.FC = () => {
             <div className="bg-blue-500 text-white flex flex-wrap justify-between items-center text-sm px-4 md:px-8 h-auto md:h-10 py-2 md:py-0">
                 <div className="flex items-center gap-2 w-full md:w-auto mb-2 md:mb-0">
                     <LocationOnIcon fontSize="small" />
-                    <span>161 Gleneagles Road, Southerton, Harare</span>
+                    <span>154 Zebra Street, Nkana East, Kitwe</span>
                 </div>
                 <div className="hidden md:flex items-center gap-2">
                     <EmailIcon fontSize="small" />
-                    <span>sales@appliedcontrols.co.zw</span>
+                    <a href="mailto:sales@fge.co.zm" className="hover:underline">sales@fge.co.zm</a>
                 </div>
                 <div className="hidden md:flex items-center gap-4">
                     <PhoneIcon fontSize="small" />
-                    <span>Sales Hotline: (+263) 242 661 304</span>
+                    <span>Sales Hotline: +260 212 222 249</span>
                     <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition" aria-label="Facebook"><FacebookIcon fontSize="small" /></a>
                     <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition" aria-label="LinkedIn"><Linkedin size={18} /></a>
                 </div>
@@ -58,19 +59,27 @@ const Header: React.FC = () => {
                 <nav className="hidden md:flex items-center gap-8 ml-8 lg:ml-16">
                     <Link to="/" className={isActive('/') ? 'text-blue-500 font-bold underline' : 'text-gray-700 hover:text-blue-500 transition'}>Home</Link>
                     <Link to="/about" className={isActive('/about') ? 'text-blue-500 font-bold underline' : 'text-gray-700 hover:text-blue-500 transition'}>About Us</Link>
-                    <div className="relative group">
-                        <button className="flex items-center gap-1 text-gray-700 hover:text-blue-500 transition font-medium focus:outline-none group-hover:text-blue-500" aria-haspopup="true" aria-expanded="false">
+                    <div
+                        className="relative"
+                        onMouseEnter={() => setDesktopScopeOpen(true)}
+                        onMouseLeave={() => setDesktopScopeOpen(false)}
+                    >
+                        <button
+                            className="flex items-center gap-1 text-gray-700 hover:text-blue-500 transition font-medium focus:outline-none"
+                            aria-haspopup="true"
+                            aria-expanded={desktopScopeOpen}
+                        >
                             Scope <span className="text-xs">▼</span>
                         </button>
-                        <div className="absolute left-0 mt-2 w-80 bg-white shadow-lg border-t-2 border-blue-500 rounded-b z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200">
+                        <div
+                            className={`absolute left-0 top-full w-80 bg-white shadow-lg border-t-2 border-blue-500 rounded-b z-20 transition-opacity duration-200 ${desktopScopeOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                        >
                             <Link to="/services/electrical-control-instrumentation" className="block px-6 py-3 text-gray-700 hover:bg-blue-500 hover:text-white transition">Electrical Control & Instrumentation</Link>
                             <Link to="/services/medium-high-voltage" className="block px-6 py-3 text-gray-700 hover:bg-blue-500 hover:text-white transition">Medium & High Voltage Services</Link>
                             <Link to="/services/structural-mechanical-piping-platework" className="block px-6 py-3 text-gray-700 hover:bg-blue-500 hover:text-white transition">Structural, Mechanical, Piping & Platework</Link>
                             <Link to="/services/energy-waste-management" className="block px-6 py-3 text-gray-700 hover:bg-blue-500 hover:text-white transition">Energy & Waste Management</Link>
                         </div>
                     </div>
-                    <Link to="/gallery" className={isActive('/gallery') ? 'text-blue-500 font-bold underline' : 'text-gray-700 hover:text-blue-500 transition'}>Gallery</Link>
-                    <Link to="/blog" className={isActive('/blog') ? 'text-blue-500 font-bold underline' : 'text-gray-700 hover:text-blue-500 transition'}>Blog</Link>
                     <Link to="/contact" className={isActive('/contact') ? 'text-blue-500 font-bold underline' : 'text-gray-700 hover:text-blue-500 transition'}>Contact</Link>
                 </nav>
                 {/* CTA and Mobile Toggle */}
@@ -173,8 +182,6 @@ const Header: React.FC = () => {
         )}
     </AnimatePresence>
 </div>
-                                    <Link to="/gallery" className={isActive('/gallery') ? 'py-3 px-3 rounded-md bg-blue-500 text-white font-bold' : 'py-3 px-3 rounded-md text-gray-700 hover:bg-blue-50'} onClick={() => setMobileOpen(false)}>Gallery</Link>
-                                    <Link to="/blog" className={isActive('/blog') ? 'py-3 px-3 rounded-md bg-blue-500 text-white font-bold' : 'py-3 px-3 rounded-md text-gray-700 hover:bg-blue-50'} onClick={() => setMobileOpen(false)}>Blog</Link>
                                     <Link to="/contact" className={isActive('/contact') ? 'py-3 px-3 rounded-md bg-blue-500 text-white font-bold' : 'py-3 px-3 rounded-md text-gray-700 hover:bg-blue-50'} onClick={() => setMobileOpen(false)}>Contact</Link>
                                 </nav>
                                 <div className="mt-auto">

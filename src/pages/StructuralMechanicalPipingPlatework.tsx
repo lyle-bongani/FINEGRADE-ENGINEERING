@@ -13,8 +13,8 @@ const StructuralMechanicalPipingPlatework: React.FC = () => {
   return (
     <main className="w-full bg-white text-gray-700">
       {/* Hero */}
-      <section className="w-full bg-blue-500 text-white min-h-screen">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 pt-[40vh] pb-12 md:pb-20 lg:pb-28">
+      <section className="w-full bg-blue-500 text-white min-h-[60vh]">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 pt-[22vh] pb-12 md:pb-16 lg:pb-20">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">Structural, Mechanical, Piping & Platework Services</h1>
           <p className="mt-4 md:mt-6 text-base md:text-xl text-blue-100 max-w-3xl">
             Expertise in structural, mechanical, piping, and platework projects for various industries.
@@ -47,7 +47,7 @@ const StructuralMechanicalPipingPlatework: React.FC = () => {
             <img
               src="https://www.appliedcontrols.co.zw/wp-content/uploads/elementor/thumbs/Structural-Mechanical-Piping-Platework-Solutions-Harare-r616yb4zyq6rxln0a2ffi7irnpxqphi6bngcd0ny0o.webp"
               alt="Structural, Mechanical, Piping & Platework"
-              className="w-full h-full max-h-[520px] object-cover rounded-2xl"
+              className="w-full h-auto max-h-[700px] object-contain rounded-2xl bg-white p-2"
             />
           </div>
         </div>

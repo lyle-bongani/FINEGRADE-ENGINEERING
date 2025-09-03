@@ -35,10 +35,13 @@ const AboutHero: React.FC = () => (
       transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
     />
     <div className="absolute z-10 flex flex-col items-center w-full" style={{ bottom: '30%', left: 0 }}>
-      <h1 className="text-4xl md:text-6xl font-extrabold text-blue-500 mb-4 drop-shadow text-center drop-shadow-[0_2px_2px_white]">
+      <h1
+        className="text-4xl md:text-6xl font-extrabold text-white mb-4 text-center"
+        style={{ WebkitTextStroke: '2px #259ed9' }}
+      >
         About Finegrade Engineering
       </h1>
-      <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto drop-shadow text-center">
+      <p className="text-lg md:text-xl text-white max-w-2xl mx-auto text-center">
         Finegrade Engineering is dedicated to delivering mechanical and electrical spares and services, specializing in project management, construction, and engineering solutions for the mining, steel, and manufacturing industries.
       </p>
     </div>

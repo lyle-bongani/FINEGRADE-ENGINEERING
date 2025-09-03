@@ -5,9 +5,8 @@ import MissionVisionSection from '../components/AboutPage/MissionVisionSection';
 import CoreValuesSection from '../components/AboutPage/CoreValuesSection';
 import CustomerSupplierCommunitySection from '../components/AboutPage/CustomerSupplierCommunitySection';
 import OurWorkSection from '../components/AboutPage/OurWorkSection';
-import MeetTheTeamSection from '../components/AboutPage/MeetTheTeamSection';
 import OurServicesSection from '../components/AboutPage/OurServicesSection';
-import PartnersSection from '../components/AboutPage/PartnersSection';
+import HomePartnersMarquee from '../components/HomePartnersMarquee';
 
 const AboutUs: React.FC = () => {
     return (
@@ -17,8 +16,9 @@ const AboutUs: React.FC = () => {
         <MissionVisionSection />
         <OurServicesSection />
         <CoreValuesSection />
-        <MeetTheTeamSection />
-        <PartnersSection />
+        <div className="h-[25vh] flex items-center overflow-hidden">
+          <HomePartnersMarquee />
+        </div>
         <CustomerSupplierCommunitySection />
         <OurWorkSection />
       </>

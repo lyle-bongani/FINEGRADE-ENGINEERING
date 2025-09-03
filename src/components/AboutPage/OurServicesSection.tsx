@@ -36,14 +36,16 @@ const OurServicesSection: React.FC = () => (
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Our Services</h2>
         <div className="space-y-4 w-full">
           {badges.map((badge) => (
-            <div key={badge.label} className="flex items-center bg-blue-400 rounded-full px-4 py-2 font-semibold text-white text-base shadow-md">
+            <div
+              key={badge.label}
+              className="flex items-center bg-white border border-blue-200 rounded-full px-4 py-2 font-semibold text-blue-600 text-base shadow-md"
+            >
               {badge.icon}
               {badge.label}
             </div>
           ))}
         </div>
-        <div className="mt-8 hidden md:flex space-x-4">
-          <img src="/logo192.png" alt="Finegrade Engineering" className="h-8 w-8" />
+        <div className="mt-8 hidden md:flex">
           <span className="text-white font-bold tracking-widest">Finegrade Engineering</span>
         </div>
       </div>
@@ -57,28 +59,27 @@ const OurServicesSection: React.FC = () => (
           {services.map((service, idx) => (
             <div
               key={service.title}
-              className={`rounded-2xl border border-blue-100 p-7 flex flex-col items-start shadow-md transition-all duration-200 ${idx === 0 ? 'bg-blue-500 text-white border-blue-500 shadow-xl' : 'bg-white text-blue-900 hover:border-blue-400 hover:shadow-lg'}`}
+              className={`hover-card rounded-2xl border border-blue-100 p-7 flex flex-col items-start shadow-md transition-all duration-200 ${idx === 0 ? 'bg-blue-500 text-white border-blue-500 shadow-xl' : 'bg-white text-blue-900 hover:border-blue-400 hover:shadow-lg'}`}
             >
               <div className="flex items-center mb-2">
                 <span className={`inline-block w-2 h-2 rounded-full mr-3 ${idx === 0 ? 'bg-white' : 'bg-blue-400'}`}></span>
                 <span className="text-lg font-bold">{service.title}</span>
               </div>
               <div className={`text-base mb-4 ${idx === 0 ? 'text-white' : 'text-blue-700'}`}>{service.desc}</div>
-              {idx === 0 ? (
-                <Link
-                  to="/services/electrical-control-instrumentation"
-                  className="mt-auto px-4 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-white text-blue-600 hover:bg-blue-500 hover:text-white"
-                >
-                  Learn more
-                </Link>
-              ) : (
-                <Link
-                  to={idx === 1 ? '/services/medium-high-voltage' : idx === 2 ? '/services/structural-mechanical-piping-platework' : '/services/energy-waste-management'}
-                  className="mt-auto px-4 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-blue-500 text-white hover:bg-blue-600 hover:text-white"
-                >
-                  Learn more
-                </Link>
-              )}
+              <Link
+                to={
+                  idx === 0
+                    ? '/services/electrical-control-instrumentation'
+                    : idx === 1
+                    ? '/services/medium-high-voltage'
+                    : idx === 2
+                    ? '/services/structural-mechanical-piping-platework'
+                    : '/services/energy-waste-management'
+                }
+                className="mt-auto px-4 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-white text-blue-600 hover:bg-blue-50"
+              >
+                Learn more
+              </Link>
             </div>
           ))}
         </div>

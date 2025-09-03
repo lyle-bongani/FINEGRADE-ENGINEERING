@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import EmailIcon from '@mui/icons-material/Email';
+import LanguageIcon from '@mui/icons-material/Language';
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({
@@ -25,7 +30,7 @@ const Contact: React.FC = () => {
     setSubmitted(true);
   };
 
-  const mailtoHref = `mailto:sales@appliedcontrols.co.zw?subject=Contact%20Request%20-%20${encodeURIComponent(
+  const mailtoHref = `mailto:sales@fge.co.zm?subject=Contact%20Request%20-%20${encodeURIComponent(
     form.company || 'No Company'
   )}&body=${encodeURIComponent(
     `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nCompany: ${form.company}\n\nMessage:\n${form.message}`
@@ -52,23 +57,23 @@ const Contact: React.FC = () => {
   <h2 className="text-xl font-bold text-blue-500 text-center md:text-left mb-4">HEADOFFICE</h2>
   <div className="space-y-3 text-blue-500">
     <div className="flex items-center gap-3">
-      <span role="img" aria-label="address" className="text-2xl">🏢</span>
+      <LocationOnIcon fontSize="small" className="text-blue-500" />
       <span className="font-medium">154 Zebra Street, Nkana East, Kitwe.</span>
     </div>
     <div className="flex items-center gap-3">
-      <span role="img" aria-label="phone" className="text-2xl">☎️</span>
+      <PhoneIcon fontSize="small" className="text-blue-500" />
       <span className="font-medium">+260 212 222 249 | +260 212 222 250</span>
     </div>
     <div className="flex items-center gap-3">
-      <span role="img" aria-label="mobile" className="text-2xl">📱</span>
+      <SmartphoneIcon fontSize="small" className="text-blue-500" />
       <span className="font-medium">+260769104568 | +260769104865</span>
     </div>
     <div className="flex items-center gap-3">
-      <span role="img" aria-label="email" className="text-2xl">✉️</span>
+      <EmailIcon fontSize="small" className="text-blue-500" />
       <a href="mailto:sales@fge.co.zm" className="underline hover:text-blue-700 font-medium">sales@fge.co.zm</a>
     </div>
     <div className="flex items-center gap-3">
-      <span role="img" aria-label="website" className="text-2xl">🌐</span>
+      <LanguageIcon fontSize="small" className="text-blue-500" />
       <a href="https://www.fge.co.zm" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-700 font-medium">www.fge.co.zm</a>
     </div>
   </div>
@@ -143,7 +148,7 @@ const Contact: React.FC = () => {
               ) : (
                 <div className="mt-6">
                   <p className="text-green-700 font-semibold">Thanks! Your message has been noted.</p>
-                  <p className="text-gray-700 mt-1">We’ll get back to you shortly. You can also reach us at <a className="text-blue-500 underline" href="mailto:sales@appliedcontrols.co.zw">sales@appliedcontrols.co.zw</a>.</p>
+                  <p className="text-gray-700 mt-1">We’ll get back to you shortly. You can also reach us at <a className="text-blue-500 underline" href="mailto:sales@fge.co.zm">sales@fge.co.zm</a>.</p>
                 </div>
               )}
             </div>

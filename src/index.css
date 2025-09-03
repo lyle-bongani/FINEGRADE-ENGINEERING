@@ -51,3 +51,21 @@ code {
   color: #4b5563;
   font-style: italic;
 }
+
+/* Reusable card hover animation */
+.hover-card {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(37, 158, 217, 0.18);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hover-card {
+    transition: none;
+  }
+  .hover-card:hover {
+    transform: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  }
+}

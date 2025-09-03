@@ -27,7 +27,7 @@ const FloatingHelpButton: React.FC = () => {
                 <Fab 
                     color="primary"
                     aria-label="Chat with us on WhatsApp"
-                    href="https://wa.me/1234567890" 
+                    href="https://wa.me/260212222249" 
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{

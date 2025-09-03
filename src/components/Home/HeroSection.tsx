@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 23, repeat: Infinity, ease: 'easeInOut' }}
             />
             <div className="absolute z-10 flex flex-col items-start text-left w-full pl-8" style={{ bottom: '30%', left: 0 }}>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-blue-500 mb-4 drop-shadow text-left drop-shadow-[0_2px_2px_white]">
+                <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow text-left">
                     Expert Industrial Engineering<br />
                     Solutions Partner.
                 </h1>

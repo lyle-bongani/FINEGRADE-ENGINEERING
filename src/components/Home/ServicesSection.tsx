@@ -51,7 +51,7 @@ const ServicesSection: React.FC = () => {
                             <motion.div
                                 key={service.title}
                                 className={
-                                    `flex flex-col items-center justify-between rounded-xl p-8 shadow transition group ` +
+                                    `hover-card flex flex-col items-center justify-between rounded-xl p-8 shadow transition group ` +
                                     (idx === 2
                                         ? 'bg-blue-500 text-white scale-105 z-10'
                                         : 'bg-white text-gray-900 border border-blue-100 hover:shadow-lg')

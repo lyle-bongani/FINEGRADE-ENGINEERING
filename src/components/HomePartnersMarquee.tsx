@@ -34,15 +34,15 @@ const partners = [
 ];
 
 const HomePartnersMarquee: React.FC = () => (
-  <div className="w-full bg-white py-4 overflow-hidden">
+  <div className="w-full bg-white py-10 md:py-14 overflow-hidden">
     <div className="relative w-full">
       <div className="flex items-center animate-marquee whitespace-nowrap">
         {partners.concat(partners).map((p, i) => (
-          <div key={p.name + i} className="mx-8 inline-block">
+          <div key={p.name + i} className="mx-10 inline-block">
             <img
               src={p.img}
               alt={p.alt}
-              className="h-12 md:h-16 max-w-[140px] object-contain"
+              className="h-16 md:h-24 max-w-[200px] object-contain"
               loading="lazy"
               style={{ filter: "none" }}
             />

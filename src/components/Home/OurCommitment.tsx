@@ -37,7 +37,7 @@ const OurCommitment: React.FC = () => {
                 {/* Image */}
                 <div className="flex-1 flex justify-center items-stretch">
                     <img
-                        src="/images/pics/Breast-Cancer-Awareness-2024-6.jpg"
+                        src="/images/pics/aboutabout.jpg"
                         alt="Our Commitment"
                         className="rounded-xl shadow-lg max-w-full w-[520px] object-cover"
                         style={imgHeight ? { height: imgHeight } : { minHeight: 320 }}

@@ -1,13 +1,12 @@
 import React from 'react';
-import EngineeringIcon from '@mui/icons-material/Engineering';
 
 const AboutSection: React.FC = () => (
   <section className="w-full py-20 bg-white">
-    <div className="max-w-6xl mx-auto px-4 md:px-8">
-      <div className="p-6 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+    <div className="w-full mx-auto px-4 md:px-8">
+      <div className="p-0 md:p-0">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           {/* Left: All text */}
-          <div className="md:col-span-7 lg:col-span-7 text-left">
+          <div className="md:col-span-6 lg:col-span-6 text-left">
             <div className="uppercase tracking-widest text-xs font-semibold text-gray-500 mb-2">About Us</div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-blue-500 leading-tight text-left">Finegrade Engineering</h2>
             <p className="text-gray-600 font-semibold mt-2 text-left">Delivering Excellence in Engineering Solutions</p>
@@ -23,9 +22,13 @@ const AboutSection: React.FC = () => (
             </div>
           </div>
 
-          {/* Right: Large Engineering icon (MUI) */}
-          <div className="md:col-span-5 lg:col-span-5 flex justify-center md:justify-end">
-            <EngineeringIcon sx={{ fontSize: { xs: 160, md: 224 }, color: '#259ed9' }} />
+          {/* Right: Image */}
+          <div className="md:col-span-6 lg:col-span-6 flex justify-center md:justify-start">
+            <img
+              src="/images/pics/aboutabout.jpg"
+              alt="About Finegrade Engineering"
+              className="w-full max-w-2xl h-96 md:h-[28rem] lg:h-[32rem] xl:h-[36rem] rounded-2xl shadow-lg object-cover"
+            />
           </div>
         </div>
       </div>
