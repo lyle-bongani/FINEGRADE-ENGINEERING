@@ -12,8 +12,8 @@ const MediumHighVoltage: React.FC = () => {
   return (
     <main className="w-full bg-white text-gray-700">
       {/* Hero */}
-      <section className="w-full bg-blue-500 text-white min-h-[60vh]">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 pt-[22vh] pb-12 md:pb-16 lg:pb-20">
+      <section className="w-full bg-blue-500 text-white min-h-[30vh]">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 pt-[8vh] pb-8 md:pb-12 lg:pb-16">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">Medium and High Voltage Services</h1>
           <p className="mt-4 md:mt-6 text-base md:text-xl text-blue-100 max-w-3xl">
             Comprehensive solutions for medium and high voltage systems, from planning to execution.

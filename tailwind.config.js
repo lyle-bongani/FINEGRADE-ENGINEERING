@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        sans: ["Google Sans", "sans-serif"],
       },
       colors: {
         // Ensure we only use brand colors across the app

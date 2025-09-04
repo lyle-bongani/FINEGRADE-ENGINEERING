@@ -25,7 +25,7 @@ const AboutSection: React.FC = () => (
           {/* Right: Image */}
           <div className="md:col-span-6 lg:col-span-6 flex justify-center md:justify-start">
             <img
-              src="/images/pics/aboutabout.jpg"
+              src="/images/pics/Medium Voltage and High Voltage.jpg"
               alt="About Finegrade Engineering"
               className="w-full max-w-2xl h-96 md:h-[28rem] lg:h-[32rem] xl:h-[36rem] rounded-2xl shadow-lg object-cover"
             />

@@ -37,7 +37,6 @@ const AboutHero: React.FC = () => (
     <div className="absolute z-10 flex flex-col items-center w-full" style={{ bottom: '30%', left: 0 }}>
       <h1
         className="text-4xl md:text-6xl font-extrabold text-white mb-4 text-center"
-        style={{ WebkitTextStroke: '2px #259ed9' }}
       >
         About Finegrade Engineering
       </h1>

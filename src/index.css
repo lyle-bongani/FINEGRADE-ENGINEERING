@@ -4,13 +4,13 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 
 /* Blog article refined typography */

@@ -14,12 +14,12 @@ const AboutUs: React.FC = () => {
         <AboutHero />
         <AboutSection />
         <MissionVisionSection />
+        <CustomerSupplierCommunitySection />
         <OurServicesSection />
         <CoreValuesSection />
         <div className="h-[25vh] flex items-center overflow-hidden">
           <HomePartnersMarquee />
         </div>
-        <CustomerSupplierCommunitySection />
         <OurWorkSection />
       </>
     );
