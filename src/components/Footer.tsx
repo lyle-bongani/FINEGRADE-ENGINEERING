@@ -1,10 +1,10 @@
 import React from 'react';
-import { MapPin, Phone, Facebook, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Facebook, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
     return (
         <footer className="relative w-full bg-[#000000] text-white pt-12 pb-4 px-4">
-            <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-8 md:grid md:grid-cols-3 md:items-start">
+            <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-8 md:grid md:grid-cols-4 md:items-start md:gap-x-12">
                 {/* Logo and Socials */}
                 <div className="flex flex-col items-start mb-8 md:mb-0 text-left md:place-self-start">
                     <img src="/images/logo/FINEGRADE ENGINEERING Logo white.svg" alt="Finegrade Engineering Logo" className="h-24 w-auto mb-6" />
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 {/* Quick Links */}
-                <div className="mb-8 md:mb-0 text-left flex flex-col items-start md:place-self-center">
+                <div className="mb-8 md:mb-0 text-left flex flex-col items-start md:pl-10">
                     <h3 className="text-xl font-bold mb-2">Quick Links</h3>
                     <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
                     <nav className="flex flex-col gap-2 items-start">
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                     </nav>
                 </div>
                 {/* Offices */}
-                <div className="flex flex-col gap-4 justify-center text-left md:place-self-end">
+                <div className="flex flex-col gap-4 justify-center text-left md:-ml-8">
   <h3 className="text-xl font-bold mb-2 text-white">HEADOFFICE</h3>
   <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
   <div className="flex items-center gap-2 mb-2"><MapPin size={18} className="text-blue-400" /><span className="text-white">154 Zebra Street, Nkana East, Kitwe.</span></div>
@@ -33,6 +33,23 @@ const Footer: React.FC = () => {
   <div className="flex items-center gap-2 mb-2"><Phone size={18} className="text-blue-400" /><span className="text-white">+260769104568 | +260769104865</span></div>
   <div className="flex items-center gap-2 mb-2"><span className="text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M2 4v16h20V4H2zm2 2h16v12H4V6zm2 2v2h2V8H6zm0 4v2h2v-2H6zm4-4v2h8V8h-8zm0 4v2h8v-2h-8zm0 4v2h8v-2h-8z" fill="currentColor"/></svg></span><a href="mailto:sales@fge.co.zm" className="underline text-blue-300 hover:text-blue-200">sales@fge.co.zm</a></div>
 </div>
+                {/* Newsletter */}
+                <div className="mb-8 md:mb-0 text-left flex flex-col items-start md:place-self-end md:self-start">
+                    <h3 className="text-xl font-bold mb-2">Newsletter</h3>
+                    <div className="w-10 h-1 bg-blue-500 mb-4 rounded" />
+                    <p className="text-gray-300 text-sm mb-4">Stay updated with our latest news and engineering solutions.</p>
+                    <div className="flex flex-col gap-2 w-full">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            className="px-3 py-2 rounded bg-gray-800 text-white border border-gray-600 focus:border-blue-500 focus:outline-none text-sm"
+                        />
+                        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium transition flex items-center gap-2">
+                            <Mail size={16} />
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
             </div>
             {/* Bottom Bar */}
             <div className="relative z-10 mt-8 border-t border-gray-700 pt-4 text-left text-gray-300 text-sm">
